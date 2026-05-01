@@ -13,26 +13,26 @@ Designed specifically for **Agentic Orchestration** on local Windows machines, t
 
 ## 📂 Repository Structure
 
-```text
+```
 📦 ui_automation_agent_with_android_cli
  ┣ 📂 agentic_automation/   # Core Python agent logic and tools
  ┣ 📜 app-debug.apk         # Sample target application for testing
  ┣ 📜 requirements.txt      # Python dependencies
  ┗ 📜 README.md             # Project documentation
-🛠️ Prerequisites
+```
+## 🛠️ Prerequisites
 Before running the agent, ensure your environment meets the following requirements:
 
-Python 3.10+ installed on your system.
+- ** Python 3.10+ installed on your system.
 
-Android Studio / Android SDK installed, with an emulator running or a physical device connected via USB.
+- ** emulator running or a physical device connected via USB.
 
-ADB & Android CLI added to your system PATH.
+- ** ADB & Android CLI added to your system PATH.
 
-Ollama installed and running locally.
+- ** Ollama installed and running locally.
 
-🚀 Installation & Setup
+## 🚀 Installation & Setup
 1. Clone the repository
-
 Bash
 git clone [https://github.com/spadala88/ui_automation_agent_with_android_cli.git](https://github.com/spadala88/ui_automation_agent_with_android_cli.git)
 cd ui_automation_agent_with_android_cli
@@ -48,21 +48,15 @@ Ensure Ollama is running in the background, then pull the optimized Gemma model:
 
 Bash
 ollama pull gemma4:e4b
-🎮 Usage
+## 🎮 Usage
 Step 1: Launch your Android Emulator or connect your physical device. Verify the connection:
 
-Bash
-adb devices
-Step 2: (Optional) If you want to test the agent on the provided sample app, install it using ADB:
-
-Bash
-adb install app-debug.apk
-Step 3: Run the autonomous agent:
+Step 2: Run the autonomous agent:
 
 Bash
 cd agentic_automation
 python main.py  # (Or the specific entrypoint script in this folder)
-🏗️ How It Works (The Agent Loop)
+## 🏗️ How It Works (The Agent Loop)
 Instead of relying on visual pixels, this framework reads the code.
 
 Observe: The agent runs android layout -p to dump the current application state as a structured JSON/XML tree.
@@ -74,7 +68,7 @@ Act: The agent uses the android screen resolve CLI command to calculate the exac
 Repeat: The cycle starts over to verify the action succeeded or to perform the next step.
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome! 
 
 📝 License
-Distributed under the MIT License. See LICENSE for more information.
+
