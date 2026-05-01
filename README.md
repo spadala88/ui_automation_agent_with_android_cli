@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/cc3e6d99-9bb2-4f42-bca3-06af69e0e959
+
+
+
 # 🤖 UI Automation Agent (Android CLI Edition)
 
 An intelligent, LLM-powered Android UI automation framework that replaces traditional OCR and brittle coordinate-based clicking with native, direct Android CLI layout parsing.
